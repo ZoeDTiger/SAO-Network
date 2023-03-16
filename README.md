@@ -45,17 +45,17 @@
     
 #### 创建验证器
     saod tx staking create-validator \
-  --amount=10000000sao \
-  --pubkey=$(saod tendermint show-validator) \
-  --moniker="dekun-sao" \
-  --chain-id=sao-testnet1 \
-  --commission-rate="0.10" \
-  --commission-max-rate="0.20" \
-  --commission-max-change-rate="0.01" \
-  --min-self-delegation="1000000" \
-  --gas="2000000" \
-  --gas-prices="0.0025sao" \
-  --from=<your_key_address>
+    --amount=10000000sao \
+    --pubkey=$(saod tendermint show-validator) \
+    --moniker="dekun-sao" \
+    --chain-id=sao-testnet1 \
+    --commission-rate="0.10" \
+    --commission-max-rate="0.20" \
+    --commission-max-change-rate="0.01" \
+    --min-self-delegation="1000000" \
+    --gas="2000000" \
+    --gas-prices="0.0025sao" \
+    --from=<your_key_address>
 
 
 
