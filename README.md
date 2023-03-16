@@ -28,6 +28,55 @@
     wget https://github.com/SAONetwork/sao-consensus/releases/download/v0.1.3/config.toml -O config.toml
     wget https://github.com/SAONetwork/sao-consensus/releases/download/v0.1.3/genesis.json -O genesis.json
 
+#### 运行节点
+    screen -S sao
+    saod start
+    
+#### 查看区块同步高度
+    saod status 2>&1 | jq .SyncInfo
+
+## 部署验证人节点
+    前提：
+    1、需要运行共识节点，并且共识节点完成区块同步；
+    2、需要创建SAO账户，并且帐户中有一定的SAO测试币。
+    
+#### 创建帐户
+    saod keys add <your_key_name>
+    
+#### 创建验证器
+    saod tx staking create-validator \
+  --amount=10000000sao \
+  --pubkey=$(saod tendermint show-validator) \
+  --moniker="dekun-sao" \
+  --chain-id=sao-testnet1 \
+  --commission-rate="0.10" \
+  --commission-max-rate="0.20" \
+  --commission-max-change-rate="0.01" \
+  --min-self-delegation="1000000" \
+  --gas="2000000" \
+  --gas-prices="0.0025sao" \
+  --from=<your_key_address>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
