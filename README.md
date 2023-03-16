@@ -71,7 +71,7 @@
 
 #### 委托人质押
     saod tx staking delegate <validatorAddress> <amountToBond> --from <delegatorKeyName> --gas auto --gas-adjustment 1.5 --gas-prices <gasPrice>
-    比如：<validatorAddress>=saovaloper1r5targh3z3e2s3q9lgv68y0lkpd2urqxrugpxq, <amountToBound>=10000000sao, <gasPrice>=0.0025sao
+    比如：<validatorAddress>=saovaloper1x7l79704jdmmscjtjltsa0n7nx33a3p95jc8kj, <amountToBound>=10000000sao, <gasPrice>=0.0025sao
 
 
 
