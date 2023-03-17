@@ -102,9 +102,22 @@
     make
     sudo cp $HOME/sao-node/saoclient $HOME/sao-node/saonode /usr/local/bin/
 
+#### 创建存储节点账户
+    chain-address可以用官方公开的rpc endpoint，也可使用本地共识节点的endpoint，分别为：
+    https://rpc-testnet-node0.sao.network:443
+    http://127.0.0.1:26657
+    
+##### 创建账户
+    saonode --chain-address <chain-address> --keyring <keyring-dir> account create --key-name <key-name>
+<img width="715" alt="微信截图_20230317155905" src="https://user-images.githubusercontent.com/100336530/225847552-30f09d0b-1238-4e6a-bf04-8bd9a16786bd.png">
 
 
+##### 给存储账户转账
+    saod tx bank send <from> sao18a4d7t602zfgtpk2m4muyahcguyqr6hsc58taw 100000000stake
+    saod query bank balances sao18a4d7t602zfgtpk2m4muyahcguyqr6hsc58taw
 
+#### 初始化和启动节点
+    
 
 
 
