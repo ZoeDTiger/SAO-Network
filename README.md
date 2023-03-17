@@ -12,6 +12,14 @@
 
 ## 部署共识节点
     SAO Network 使用 Go 1.19.1 来编译代码，需要安装Go 1.19.1及以上版本
+    
+#### 安装Go
+    cd $HOME
+    wget "https://go.dev/dl/go1.19.4.linux-amd64.tar.gz"
+    sudo rm -rf /usr/local/go
+    sudo tar -C /usr/local -zxvf go1.19.4.linux-amd64.tar.gz
+    
+    
 
 #### 源码构建
     git clone https://github.com/SaoNetwork/sao-consensus.git
