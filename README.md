@@ -30,6 +30,7 @@
 
 #### 源码构建SAO Network
     git clone https://github.com/SaoNetwork/sao-consensus.git
+    cd sao-consensus/
     git checkout testnet1
     make
     which saod
