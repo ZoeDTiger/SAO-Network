@@ -19,9 +19,16 @@
     sudo rm -rf /usr/local/go
     sudo tar -C /usr/local -zxvf go1.19.4.linux-amd64.tar.gz
     
+    echo "export GOROOT=/usr/local/go" |  sudo tee -a /etc/profile
+    echo "export GOPATH=$HOME/go" |  sudo tee -a /etc/profile
+    echo "export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin" |  sudo tee -a /etc/profile
+    echo "export GO111MODULE=on" |  sudo tee -a /etc/profile
+    echo "export GOPROXY=https://goproxy.cn" |  sudo tee -a /etc/profile
     
+    source /etc/profile
+    go version
 
-#### 源码构建
+#### 源码构建SAO Network
     git clone https://github.com/SaoNetwork/sao-consensus.git
     git checkout testnet1
     make
