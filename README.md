@@ -92,11 +92,15 @@
     saod tx staking delegate <validatorAddress> <amountToBond> --from <delegatorKeyName> --gas auto --gas-adjustment 1.5 --gas-prices <gasPrice>
     比如：<validatorAddress>=saovaloper1x7l79704jdmmscjtjltsa0n7nx33a3p95jc8kj, <amountToBound>=10000000sao, <gasPrice>=0.0025sao
 
+## 部署存储节点
+    前提：需要运行共识节点，并且共识节点完成区块同步。
 
-
-
-
-
+#### 源码构建sao-node
+    git clone https://github.com/SAONetwork/sao-node.git
+    cd sao-node/
+    git checkout testnet1
+    make
+    sudo cp $HOME/sao-node/saoclient $HOME/sao-node/saonode /usr/local/bin/
 
 
 
