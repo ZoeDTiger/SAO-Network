@@ -115,6 +115,8 @@
 ##### 给存储账户转账
     saod tx bank send <from> sao18a4d7t602zfgtpk2m4muyahcguyqr6hsc58taw 100000000stake
     saod query bank balances sao18a4d7t602zfgtpk2m4muyahcguyqr6hsc58taw
+<img width="542" alt="微信截图_20230317155922" src="https://user-images.githubusercontent.com/100336530/225847796-17b136ff-cc9e-45f7-830d-ab4ccc780406.png">
+
 
 #### 初始化和启动节点
     
