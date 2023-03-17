@@ -119,10 +119,16 @@
 
 
 #### 初始化和启动节点
+    默认的工作目录为~/.sao-node，可以通过--repo参数改变工作目录
+    saonode --repo <repo> --chain-address <chain-address> init --creator <node-account>
     
+    比如：
+    saonode --chain-address http://120.226.39.113:26657 init --creator sao18a4d7t602zfgtpk2m4muyahcguyqr6hsc58taw
+<img width="754" alt="微信截图_20230317161601" src="https://user-images.githubusercontent.com/100336530/225849991-d8813e33-6d01-4bf1-abbb-0be550d86e8a.png">
 
-
-
+##### 运行节点
+    screen -S sao-storage
+    saonode --vv run
 
 
 
