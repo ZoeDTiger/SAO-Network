@@ -130,6 +130,9 @@
     screen -S sao-storage
     saonode --vv run
 
+#### 检查节点是否正常
+    netstat -antp | grep 203.23.128.181 | grep ESTABLISHED | grep 5153 
+<img width="581" alt="微信截图_20230317174508" src="https://user-images.githubusercontent.com/100336530/225869806-518e7b16-e145-4134-a1db-8917ef6a4d29.png">
 
 
 
