@@ -51,7 +51,8 @@
     
 #### 查看区块同步高度
     saod status 2>&1 | jq .SyncInfo
-    <img width="548" alt="微信截图_20230317133817" src="https://user-images.githubusercontent.com/100336530/225821709-84c14e75-443e-42ae-80b9-b6010da461a0.png">
+    
+<img width="548" alt="微信截图_20230317133817" src="https://user-images.githubusercontent.com/100336530/225821709-84c14e75-443e-42ae-80b9-b6010da461a0.png">
 
 ## 部署验证人节点
     前提：
