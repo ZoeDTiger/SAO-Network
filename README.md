@@ -76,7 +76,12 @@
     --gas-prices="0.0025sao" \
     --from=<your_key_address>
 
-#### 修改验证器参数
+#### 相关操作
+##### 验证节点是否正常
+###### 如果以下命令返回任何内容，则说明验证器处于活跃状态：
+    saod query tendermint-validator-set | grep "$(saod tendermint show-address)"
+
+##### 修改验证器参数
     saod tx staking edit-validator \
     --new-moniker=<new_node_name> \
     --chain-id=sao-testnet1 \
@@ -84,11 +89,6 @@
     --gas-prices="0.0025sao" \
     --from=<your_key_address>
 
-#### 验证节点是否正常
-    如果以下命令返回任何内容，则说明验证器处于活跃状态：
-    saod query tendermint-validator-set | grep "$(saod tendermint show-address)"
-
-#### 相关操作
 ##### 委托人质押
 ###### 比如：validatorAddress=saovaloper1x7l79704jdmmscjtjltsa0n7nx33a3p95jc8kj, amountToBound=10000000sao, gasPrice=0.0025sao
     saod tx staking delegate <validatorAddress> <amountToBond> --from <delegatorKeyName> --gas auto --gas-adjustment 1.5 --gas-prices <gasPrice>
