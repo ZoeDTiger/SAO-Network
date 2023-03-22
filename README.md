@@ -90,7 +90,7 @@
 
 #### 相关操作
 ##### 委托人质押
-    比如：<validatorAddress>=saovaloper1x7l79704jdmmscjtjltsa0n7nx33a3p95jc8kj, <amountToBound>=10000000sao, <gasPrice>=0.0025sao
+###### 比如：<validatorAddress>=saovaloper1x7l79704jdmmscjtjltsa0n7nx33a3p95jc8kj, <amountToBound>=10000000sao, <gasPrice>=0.0025sao
     saod tx staking delegate <validatorAddress> <amountToBond> --from <delegatorKeyName> --gas auto --gas-adjustment 1.5 --gas-prices <gasPrice>
 
 ## 部署存储节点
