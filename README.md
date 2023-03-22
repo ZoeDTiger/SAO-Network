@@ -90,8 +90,20 @@
 
 #### 相关操作
 ##### 委托人质押
-###### 比如：<validatorAddress>=saovaloper1x7l79704jdmmscjtjltsa0n7nx33a3p95jc8kj, <amountToBound>=10000000sao, <gasPrice>=0.0025sao
+###### 比如：validatorAddress=saovaloper1x7l79704jdmmscjtjltsa0n7nx33a3p95jc8kj, amountToBound=10000000sao, gasPrice=0.0025sao
     saod tx staking delegate <validatorAddress> <amountToBond> --from <delegatorKeyName> --gas auto --gas-adjustment 1.5 --gas-prices <gasPrice>
+
+##### 转质押
+###### 比如：stcValidatorAddress=saovaloper1r5targh3z3e2s3q9lgv68y0lkpd2urqxrugpxq, destValidatorAddress=saovaloper1x7l79704jdmmscjtjltsa0n7nx33a3p95jc8kj,amountToRedelegate=100000000sao, gasPrice=0.0025sao
+    saod tx staking redelegate <srcValidatorAddress> <destValidatorAddress> <amountToRedelegate> --from <delegatorKeyName> --gas auto --gas-adjustment 1.5 --gas-prices <gasPrice>
+
+##### 取消委押
+###### 比如：validatorAddress=saovaloper1x7l79704jdmmscjtjltsa0n7nx33a3p95jc8kj, amountToUnbound=10000000sao, gasPrice=0.0025sao
+    saod tx staking unbond <validatorAddress> <amountToUnbond> --from <delegatorKeyName> --gas auto --gas-adjustment 1.5 --gas-prices <gasPrice>
+
+##### 解除监禁
+###### 比如：destKeyAddress=sao1x7l79704jdmmscjtjltsa0n7nx33a3p9rs98jh,gasPrice=0.0025sao
+    saod tx slashing unjail --from <destKeyAddress> --gas auto --gas-adjustment 1.5 --gas-prices <gasPrice>
 
 ## 部署存储节点
     前提：需要运行共识节点，并且共识节点完成区块同步。
