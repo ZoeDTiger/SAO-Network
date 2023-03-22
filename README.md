@@ -54,7 +54,7 @@
     
 <img width="548" alt="微信截图_20230317133817" src="https://user-images.githubusercontent.com/100336530/225821709-84c14e75-443e-42ae-80b9-b6010da461a0.png">
 
-## 部署验证人节点
+## 部署验证节点
     前提：
     1、需要运行共识节点，并且共识节点完成区块同步；
     2、需要创建SAO账户，并且帐户中有一定的SAO测试币。
@@ -88,9 +88,10 @@
     如果以下命令返回任何内容，则说明验证器处于活跃状态：
     saod query tendermint-validator-set | grep "$(saod tendermint show-address)"
 
-#### 委托人质押
+#### 相关操作
+##### 委托人质押
     saod tx staking delegate <validatorAddress> <amountToBond> --from <delegatorKeyName> --gas auto --gas-adjustment 1.5 --gas-prices <gasPrice>
-    比如：<validatorAddress>=saovaloper1x7l79704jdmmscjtjltsa0n7nx33a3p95jc8kj, <amountToBound>=10000000sao, <gasPrice>=0.0025sao
+###### 比如：<validatorAddress>=saovaloper1x7l79704jdmmscjtjltsa0n7nx33a3p95jc8kj, <amountToBound>=10000000sao, <gasPrice>=0.0025sao
 
 ## 部署存储节点
     前提：需要运行共识节点，并且共识节点完成区块同步。
