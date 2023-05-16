@@ -147,8 +147,9 @@
     netstat -antp | grep 203.23.128.181 | grep ESTABLISHED | grep 5153 
 <img width="581" alt="微信截图_20230317174508" src="https://user-images.githubusercontent.com/100336530/225869806-518e7b16-e145-4134-a1db-8917ef6a4d29.png">
 
-
-
+#### 重新加入
+    存储节点重启后需要重新加入
+    saonode join --creator saoxx
 
 
 
